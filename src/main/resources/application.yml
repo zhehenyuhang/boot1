@@ -1,0 +1,35 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/ssm_db
+      username: root
+      # 数字密码 “ ” 包裹
+      password: "9377654."
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 表头
+      table-prefix: tbl_
+      # 自增
+      id-type: auto
+  configuration:
+    # 控制台打印注解
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+
+
+logging:
+  file:
+    name: ssmpserver.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10KB
+      file-name-pattern: ssmpserver.%d{yyyy-MM-dd}.%i.log
+  level:
+    com.yuhang.dao: debug
+
