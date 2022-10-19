@@ -5,10 +5,10 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/ssm_db
+      url: jdbc:mysql://localhost:3306/111
       username: root
       # 数字密码 “ ” 包裹
-      password: "9377654."
+      password: "111"
 
 mybatis-plus:
   global-config:
